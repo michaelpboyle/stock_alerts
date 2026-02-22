@@ -27,7 +27,7 @@ case "$HOSTNAME_NOW" in
     raspberrypi)
         PLATFORM="pi"
         echo "✅ Detected Raspberry Pi (hostname: $HOSTNAME_NOW)"
-        PYTHON_CMD="/home/michaelpb/.venvs/stock_alerts/bin/python3"
+        PYTHON_CMD="PYTHON_CMD="/home/michaelpb/.venvs/stock_alerts_env/bin/python3"
         SCRIPT_PATH="/home/michaelpb/stock_alerts/main.py"
         LOG_PATH="/home/michaelpb/stock_alerts/StockAlerts.log"
         export PYTHONPATH="/home/michaelpb/stock_alerts/src"
@@ -58,7 +58,7 @@ fi
 # Set your credentials
 stock_alerts_config() {
     export TELEGRAM_BOT_TOKEN="PUT_YOUR_TOKEN_HERE"
-    export TELEGRAM_CHAT_ID="7410739080"
+    export TELEGRAM_CHAT_ID="PUT_CHAT_ID_HERE"
     export TWELVEDATA_API_KEY="PUT_YOUR_API_KEY_HERE"
     export ALPHA_VANTAGE_API_KEY="PUT_YOUR_API_KEY_HERE"
     export EODHD_API_KEY="PUT_YOUR_API_KEY_HERE"
